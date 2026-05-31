@@ -21,6 +21,8 @@ import {
 } from 'lucide-react';
 import { MenuItem } from '../types';
 import { CUSTOMER_REVIEWS, GALLERY_ITEMS } from '../data';
+// @ts-ignore
+import storefrontBg from '../assets/images/spicy_bawarchi_storefront_1780207024944.png';
 
 const EVENT_TYPES = [
   { 
@@ -81,6 +83,7 @@ export default function HomeView({
 
   // Background culinary photography slide for the ultimate Cinematic Hero zoom effect
   const HERO_IMAGES = [
+    storefrontBg,
     "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&q=80&w=1600", // Tawa Veg Fire Roast
     "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&q=80&w=1600", // Dal Makhani Bubbles
     "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&q=80&w=1600"  // Hot Butter Naan oven
@@ -125,7 +128,7 @@ export default function HomeView({
             <motion.div
               key={heroBgIndex}
               initial={{ scale: 1.15, opacity: 0 }}
-              animate={{ scale: 1.02, opacity: 0.45 }}
+              animate={{ scale: 1.02, opacity: 0.8 }}
               exit={{ scale: 0.95, opacity: 0 }}
               transition={{ duration: 2.2, ease: "easeOut" }}
               className="absolute inset-0 bg-cover bg-center"
@@ -134,8 +137,8 @@ export default function HomeView({
           </AnimatePresence>
           
           {/* Searing Fire/Heat Gradients and Charcoal Overlays */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#070707] via-[#070707]/75 to-black/60" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#070707]/90 via-transparent to-[#070707]/90" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#070707] via-[#070707]/30 to-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#070707]/30 via-transparent to-[#070707]/30" />
 
           {/* Interactive Fire Grill Sparks Overlay */}
           <div className="absolute inset-0 opacity-40 pointer-events-none">
