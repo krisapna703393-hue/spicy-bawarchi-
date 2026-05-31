@@ -1,0 +1,6 @@
+{
+  "name": "Spicy Bawarchi",
+  "description": "An ultra-premium restaurant ordering platform for Spicy Bawarchi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
